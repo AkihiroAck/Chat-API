@@ -96,11 +96,7 @@ docker-compose up --build -d
 - Приложение будет доступно по адресу: [localhost:8000](http://localhost:8000)
 
 ### 4. Миграции и суперпользователь
-Миграции выполняются автоматически с помощью [`backend/entrypoint.sh`](backend/entrypoint.sh).
-Для создания суперпользователя используйте:
-```bash
-docker-compose exec backend python manage.py createsuperuser
-```
+Миграции выполняются автоматически с помощью [`backend/entrypoint.sh`](backend/entrypoint.sh). Также автоматически создаётся суперпользователь с учётными данными из `.env` файла.
 
 ---
 
